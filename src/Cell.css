@@ -1,10 +1,25 @@
 .Cell {
   height: 100px;
   width: 100px;
-  background-color: darkgray;
-  cursor: pointer;
+  background-color: #263238;
+  border-radius: 1px;
+  transition: background-color 0.7s ease;
 }
 
 .Cell-lit {
-  background-color: white;
+  background-color: #00bcd4;
+}
+
+@media (max-width: 768px) {
+  .Cell {
+    height: 85px;
+    width: 85px;
+  }
+}
+
+@media (max-width: 480px) {
+  .Cell {
+    height: 70px;
+    width: 70px;
+  }
 }
